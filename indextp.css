@@ -29,23 +29,13 @@
 .textHead:focus {
     color: white;
 }
-.divLeft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.divRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .divText {
     background-color: #353A40;
     color: white;
 }
-.borderText {
-    border-bottom-style: dotted;
-    border-bottom-width: 1px;
+.textEdit {
+    text-decoration-style: dotted;
+    color: black;
 }
 .buttonColor { 
     background-color: #96C83F;
@@ -64,10 +54,4 @@
 }
 .footerClass a:focus {
     color: #96C83F;
-}
-.footerPosition {
-    left: 0;
-    width: 100%;
-    position: absolute;
-
 }

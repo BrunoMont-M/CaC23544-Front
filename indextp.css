@@ -26,3 +26,48 @@
 .textHead:hover {
     color: white;
 }
+.textHead:focus {
+    color: white;
+}
+.divLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divText {
+    background-color: #353A40;
+    color: white;
+}
+.borderText {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+.buttonColor { 
+    background-color: #96C83F;
+    border-color: #96C83F;
+}
+.footerClass {
+    background-color: #1F4259;
+    color: white;
+}
+.footerClass a {
+    text-decoration: dashed;
+    color: white;
+}
+.footerClass a:hover {
+    color: #96C83F;
+}
+.footerClass a:focus {
+    color: #96C83F;
+}
+.footerPosition {
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+}

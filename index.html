@@ -20,7 +20,7 @@
                 <img src="./imagenes_integrador_front/codoacodo.png" alt="Logo" width="87,25" height="50" class="d-inline-block"><p class="textHeadTitulo">Conf Bs As</p>
             </a>
           <div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div>
               <ul class="navbar-nav mb-2 mb-lg-0 textHeadPosition">
                 <li class="nav-item back">
                   <a class="nav-link back textHead" aria-current="page" href="#">La conferencia</a>
@@ -43,7 +43,7 @@
         </div>
     </nav>
       
-    <!-- Carrusel -->
+    <!-- Carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -59,10 +59,12 @@
     </div>
 
     </header>
+
     <section>
+
       <!-- Cards -->
-      <div>
-        <p class="text-center my-0" style="padding-top: 15px;">
+      <div style="margin-bottom: 2rem;">
+        <p class="text-center my-0 fw-light" style="padding-top: 15px;">
           CONOCE A LOS
           <h2 class="text-center">ORADORES</h2>
         </p>
@@ -71,6 +73,8 @@
             <div class="card" style="width: 18rem;">
               <img src="./imagenes_integrador_front/steve.jpg" class="card-img-top" alt="steve">
               <div class="card-body">
+                <span class="badge text-bg-warning">JavaScript</span>
+                <span class="badge text-bg-primary">React</span>
                 <h5 class="card-title">Steve Jobs</h5>
                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime, rem at error sed iusto similique eum architecto tenetur omnis numquam reprehenderit perferendis corrupti. Sunt voluptatibus architecto dolorum id quidem.</p>
               </div>
@@ -80,6 +84,8 @@
             <div class="card" style="width: 18rem;">
               <img src="./imagenes_integrador_front/bill.jpg" class="card-img-top" alt="bill">
               <div class="card-body">
+                <span class="badge text-bg-warning">JavaScript</span>
+                <span class="badge text-bg-primary">React</span>
                 <h5 class="card-title">Bill Gates</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem corporis vero accusantium aliquid reiciendis? Numquam molestiae eius obcaecati est quis aliquid omnis soluta explicabo, voluptatum assumenda vitae repellat? Iste, in!</p>
               </div>
@@ -89,6 +95,8 @@
             <div class="card" style="width: 18rem;">
               <img src="./imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="ada">
               <div class="card-body">
+                <span class="badge text-bg-secondary">Secondary</span>
+                <span class="badge text-bg-danger">Danger</span>
                 <h5 class="card-title">Ada Lovelace</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nostrum cum, ullam, delectus dolorum fugiat aliquid expedita reiciendis maiores beatae aspernatur magnam totam. Dolorem praesentium reiciendis voluptatem minus quidem tempora!</p>
               </div>
@@ -96,9 +104,80 @@
           </div>
         </div>
       </div>
-    </section>
-    <footer></footer>
 
+      <!-- Img whit text -->
+      <div class="d-flex">
+        <!-- Div img -->
+        <div class="w-100">
+          <img src="./imagenes_integrador_front/honolulu.jpg" alt="honolulu" class="w-100" style="padding-right: 1px;">
+        </div>
+
+        <!-- Div text -->
+        <div class="divText w-100 p-4">
+          <h3>Bs As - Octubre</h3>
+          <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+          <a class="btn btn-outline-light" href="#" role="button">Conocé más</a>
+        </div>
+      </div>
+
+      <!-- Final -->
+      <div>
+        <p class="text-center my-0 fw-light" style="padding-top: 15px; font-size: 14px;">
+          CONVIÉRTETE EN UN
+          <h2 class="text-center display-6" style="font-weight: bolder;">ORADOR</h2>
+        </p>
+        <p class="text-center" style="margin-bottom: 0;">Anótate como orador para dar una charla ignite.Cuéntanos de qué quieres hablar!</p>
+      </div>
+      <form>
+        <div class="container w-50">
+          <div class="row mb-3">
+            <div class="col">
+              <label for="exampleFormControlInput1" class="form-label"></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            </div>
+            <div class="col">
+              <label for="exampleFormControlInput2" class="form-label"></label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="row-cols-1 mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label fw-light text-black-50">Recuerda incluír un título para tu charla</label>
+          </div>
+          <div class="row-cols-1 mb-3">
+            <button type="button" class="buttonColor btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footerClass text-white text-center p-4">
+          <div class="container">
+            <div class="row mx-5">
+              <div class="col">
+                <a href="#!">Preguntas frecuentes</a>
+              </div>
+              <div class="col">
+                <a href="#!">Contáctanos</a>
+              </div>
+              <div class="col">
+                <a href="#!">Prensa</a>
+              </div>
+              <div class="col">
+                <a href="#!">Conferencias</a>
+              </div>
+              <div class="col">
+                <a href="#!">Términos y condiciones</a>
+              </div>
+              <div class="col">
+                <a href="#!">Privacidad</a>
+              </div>
+              <div class="col">
+                <a href="#!">Estudiantes</a>
+              </div>
+            </div>
+          </div>
+    </footer>
 
   </body>
 </html>

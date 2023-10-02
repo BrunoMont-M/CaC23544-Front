@@ -55,3 +55,11 @@
 .footerClass a:focus {
     color: #96C83F;
 }
+
+@media screen and (max-width:990px) {
+    .mediaClasePositionCaC {
+        margin: 0;
+    }
+    
+}
+

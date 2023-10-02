@@ -63,3 +63,20 @@
     
 }
 
+@media screen and (max-width:1130px) {
+    .mediaCards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediaCardsIndiv {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .mediaText {
+        flex-direction: column;
+        align-items: center;
+    }
+}

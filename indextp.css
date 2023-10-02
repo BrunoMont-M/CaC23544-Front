@@ -80,3 +80,15 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width:1130px) {
+    .mediaFooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediaFooterIndiv {
+        margin-bottom: 15px;
+    }
+}

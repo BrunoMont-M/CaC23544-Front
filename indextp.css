@@ -6,65 +6,82 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 .positionCaC {
     margin-left: 60px;
 }
+
 .backgroundHead {
     background-color: #353A40;
 }
+
 .textHeadPosition {
     margin-right: 60px;
 }
+
 .textHeadTitulo {
     display: inline-flex;
     color: white;
     margin-top: 15px;
 }
+
 .textHead {
     color: rgb(138, 138, 138);
 }
+
 .textHead:hover {
     color: white;
 }
+
 .textHead:focus {
     color: white;
 }
-.textoAlineadoHeader { 
+
+.textoAlineadoHeader {
     position: absolute;
     left: 51%;
     right: 10%;
     bottom: 22%;
 }
+
 .h3Text {
     margin-bottom: 0px;
 }
+
 .myBtnSucess {
-    background-color: rgba(40,166,68,255);
-    border-color: rgba(40,166,68,255);
+    background-color: rgba(40, 166, 68, 255);
+    border-color: rgba(40, 166, 68, 255);
 }
+
 .divText {
     background-color: #353A40;
     color: white;
 }
+
 .textEdit {
     text-decoration-style: dotted;
     color: black;
 }
-.buttonColor { 
+
+.buttonColor {
     background-color: #96C83F;
     border-color: #96C83F;
 }
+
 .footerClass {
     background-color: #1F4259;
     color: white;
 }
+
 .footerClass a {
     text-decoration: dashed;
     color: white;
 }
+
 .footerClass a:hover {
     color: #96C83F;
 }
+
 .footerClass a:focus {
     color: #96C83F;
 }
@@ -73,19 +90,20 @@
     .mediaClasePositionCaC {
         margin: 0;
     }
-    
+
 }
 
 @media screen and (max-width:1130px) {
     .mediaCards {
         flex-direction: column;
         align-items: center;
-        
+
     }
+
     .mediaCardsIndiv {
         padding-bottom: 10px;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
 }
@@ -104,6 +122,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .mediaFooterIndiv {
         margin-bottom: 15px;
     }
@@ -116,7 +135,7 @@
         right: 10%;
         bottom: 22%;
     }
-    
+
 }
 
 @media screen and (max-width:670px) {
@@ -127,5 +146,5 @@
         bottom: 5%;
         top: 5%;
     }
-    
+
 }

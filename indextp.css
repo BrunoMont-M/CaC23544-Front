@@ -6,82 +6,65 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 .positionCaC {
     margin-left: 60px;
 }
-
 .backgroundHead {
     background-color: #353A40;
 }
-
 .textHeadPosition {
     margin-right: 60px;
 }
-
 .textHeadTitulo {
     display: inline-flex;
     color: white;
     margin-top: 15px;
 }
-
 .textHead {
     color: rgb(138, 138, 138);
 }
-
 .textHead:hover {
     color: white;
 }
-
 .textHead:focus {
     color: white;
 }
-
 .textoAlineadoHeader {
     position: absolute;
     left: 51%;
     right: 10%;
     bottom: 22%;
 }
-
 .h3Text {
     margin-bottom: 0px;
 }
-
 .myBtnSucess {
     background-color: rgba(40, 166, 68, 255);
     border-color: rgba(40, 166, 68, 255);
 }
-
 .divText {
     background-color: #353A40;
     color: white;
 }
-
 .textEdit {
     text-decoration-style: dotted;
     color: black;
 }
-
 .buttonColor {
     background-color: #96C83F;
     border-color: #96C83F;
 }
-
 .footerClass {
     background-color: #1F4259;
     color: white;
 }
-
 .footerClass a {
     text-decoration: dashed;
     color: white;
 }
-
 .footerClass a:hover {
     color: #96C83F;
 }
-
 .footerClass a:focus {
     color: #96C83F;
 }

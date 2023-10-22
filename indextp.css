@@ -11,6 +11,8 @@
 }
 .backgroundHead {
     background-color: #353A40;
+}.navbar .container-fluid {
+    height: 71px;
 }
 .carousel-item img {
     opacity: 0.5;
@@ -36,7 +38,7 @@
 .textHead:focus {
     color: white;
 }
-.textoAlineadoHeader {
+.textoAlineadoHeader { 
     position: absolute;
     left: 51%;
     right: 10%;
@@ -45,9 +47,62 @@
 .h3Text {
     margin-bottom: 0px;
 }
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* MODIFICACIONES PARA TP JS */
+
+
+.cardDesc {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 0%;
+}
+.cardEstudiante {
+    border-color: rgba(5,124,254,255);
+}
+.cardTrainee {
+    border-color: rgba(115,199,212,255);
+}
+.cardJunior {
+    border-color: rgba(254,192,10,255);
+}
+.alert-info-new {
+    background-color: rgba(205,228,255,255);
+    border-color: rgba(205,228,255,255);
+    color: rgba(8,70,138,255);
+    margin-bottom: 48px;
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    /* background: #1f3745; */
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(31,55,69,0.5), rgba(30,82,113,0.5)); */
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(31,55,69,1), rgba(30,82,113,1))
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #96C83F;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #96C83F;
+}
+.form-select:focus {
+    border-color: #96C83F;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #96C83F;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////// */
+
 .myBtnSucess {
-    background-color: rgba(40, 166, 68, 255);
-    border-color: rgba(40, 166, 68, 255);
+    background-color: rgba(40,166,68,255);
+    border-color: rgba(40,166,68,255);
 }
 .divText {
     background-color: #353A40;
@@ -57,12 +112,12 @@
     text-decoration-style: dotted;
     color: black;
 }
-.buttonColor {
+.buttonColor { 
     background-color: #96C83F;
     border-color: #96C83F;
 }
 .footerClass {
-    background-color: #1F4259;
+    /* background-color: #1F4259; */
     color: white;
 }
 .footerClass a {
@@ -80,20 +135,19 @@
     .mediaClasePositionCaC {
         margin: 0;
     }
-
+    
 }
 
 @media screen and (max-width:1130px) {
     .mediaCards {
         flex-direction: column;
         align-items: center;
-
+        
     }
-
     .mediaCardsIndiv {
         padding-bottom: 10px;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
     }
 
 }
@@ -112,7 +166,6 @@
         align-items: center;
         justify-content: center;
     }
-
     .mediaFooterIndiv {
         margin-bottom: 15px;
     }
@@ -125,7 +178,7 @@
         right: 10%;
         bottom: 22%;
     }
-
+    
 }
 
 @media screen and (max-width:670px) {
@@ -136,5 +189,5 @@
         bottom: 5%;
         top: 5%;
     }
-
+    
 }

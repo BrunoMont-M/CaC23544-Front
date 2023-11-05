@@ -57,3 +57,25 @@ function borrarForm() {
     document.getElementById('options_select').value = 'option0';
     document.getElementById('resumen').setAttribute('hidden', true);
 }
+
+function validarForm() {
+
+    var nombre;
+    var apellido; 
+    var email;
+    var expresion;
+    nombre = document.getElementById('nombre').value;
+    apellido = document.getElementById('apellido').value;
+    email = document.getElementById('email').value;
+
+    expresion= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+    if ( nombre === "" || apellido === "" || email === "" ) { 
+        window.alert("Todos los campos son obligatorios");
+        return false
+    }
+    else if (!expresion.test(email.value)){ 
+        window.alert("Por favor ingrese un email válido");
+        return false
+    }
+}

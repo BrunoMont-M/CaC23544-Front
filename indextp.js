@@ -153,7 +153,7 @@ function crearComprador() {
             total_precio: document.getElementById("total_precio").innerHTML
         };
     
-        fetch(`http://localhost:8080/web-app-tpfinal-23544/api/compradores`, {
+        fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/compradores`, {
             method: "POST",
             body: JSON.stringify(comprador),
         })

@@ -209,7 +209,6 @@
     border-color: #96C83F;
 }
 .footerClass {
-    /* background-color: #1F4259; */
     color: white;
 }
 .footerClass a {
@@ -282,4 +281,10 @@
         top: 5%;
     }
     
+}
+
+.error {
+    border-color: red;
+    color: red;
+    text-decoration: solid;
 }

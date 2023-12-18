@@ -84,7 +84,7 @@ function crearOrador() {
             detalles_tema: document.getElementById("detalles_tema").value
         };
     
-        fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/oradores`, {
+        fetch(`https://brunomont-m.github.io/web-app-tpfinal-23544/api/oradores`, {
             method: "POST",
             body: JSON.stringify(orador),
         })
@@ -107,7 +107,7 @@ document.getElementById("btnCrear").addEventListener('click', function() {
 //// Listado
 
 function listarOradores() {
-    const respuesta = fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/oradores`);
+    const respuesta = fetch(`https://brunomont-m.github.io/web-app-tpfinal-23544/api/oradores`);
 
     respuesta
         .then(response => response.json())
@@ -162,7 +162,7 @@ eliminarOrador = (id_orador) => {
         return;
     }
 
-    fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/oradores?id=${id_orador}`, {
+    fetch(`https://brunomont-m.github.io/web-app-tpfinal-23544/api/oradores?id=${id_orador}`, {
         method: "DELETE",
     })
         .then(response => response)
@@ -236,7 +236,7 @@ const actualizarOrador = () => {
         detalles_tema,
     };
 
-    fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/oradores?id=${oradorSeleccionado.id_orador}`, {
+    fetch(`https://brunomont-m.github.io/web-app-tpfinal-23544/api/oradores?id=${oradorSeleccionado.id_orador}`, {
         method: "PUT",
         body: JSON.stringify(orador),
     })

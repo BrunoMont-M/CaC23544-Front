@@ -1,7 +1,7 @@
 //// Listado
 
 function listarCompradores() {
-    const respuesta = fetch(`http://localhost:8080/web-app-23544/api/compradores`);
+    const respuesta = fetch(`https://brunomont-m.github.io/CaC23544-Front/api/compradores`);
 
     respuesta
         .then(response => response.json())

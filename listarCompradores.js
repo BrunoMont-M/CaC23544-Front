@@ -1,7 +1,7 @@
 //// Listado
 
 function listarCompradores() {
-    const respuesta = fetch(`http://localhost:8080/web-app-tpfinal-23544/api/compradores`);
+    const respuesta = fetch(`http://localhost:8080/web-app-23544/api/compradores`);
 
     respuesta
         .then(response => response.json())

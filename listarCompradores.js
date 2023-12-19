@@ -1,19 +1,19 @@
 //// Listado
 
 function listarCompradores() {
-    const respuesta = fetch(`https://brunomont-m.github.io/CaC23544-Front/web-app-tpfinal-23544/api/compradores`);
+    const respuesta = fetch(`http://localhost:8080/web-app-tpfinal-23544/api/compradores`);
 
     respuesta
         .then(response => response.json())
-        .then(cdata => procesarListado(cdata))
+        .then(data => procesarListado(data))
         .catch(error => dibujarError(error))
 }
 
-function procesarListado(cdata) {
+function procesarListado(data) {
 
-    saveCompradoresInFromLocal('compradores', cdata);
+    saveCompradoresInFromLocal('compradores', data);
 
-    const listarCompradores = cdata;
+    const listarCompradores = data;
     let rows = '';
     for (let compradores of listarCompradores) {
         console.log(compradores);
@@ -67,6 +67,6 @@ const removerCompradorFromLocal = () => {
     localStorage.removeItem('compradores');
 }
 
-const saveCompradoresInFromLocal = (ckey, cdata) => {
-    localStorage.setItem(ckey, JSON.stringify(cdata));
+const saveCompradoresInFromLocal = (ckey, data) => {
+    localStorage.setItem(ckey, JSON.stringify(data));
 }

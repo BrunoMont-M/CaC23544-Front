@@ -84,7 +84,7 @@ function crearOrador() {
             detalles_tema: document.getElementById("detalles_tema").value
         };
     
-        fetch(`http://localhost:8080/web-app-tpfinal-23544/api/oradores`, {
+        fetch(`http://localhost:8080/web-app-23544/api/oradores`, {
             method: "POST",
             body: JSON.stringify(orador),
         })
@@ -107,7 +107,7 @@ document.getElementById("btnCrear").addEventListener('click', function() {
 //// Listado
 
 function listarOradores() {
-    const respuesta = fetch(`http://localhost:8080/web-app-tpfinal-23544/api/oradores`);
+    const respuesta = fetch(`http://localhost:8080/web-app-23544/api/oradores`);
 
     respuesta
         .then(response => response.json())
@@ -162,7 +162,7 @@ eliminarOrador = (id_orador) => {
         return;
     }
 
-    fetch(`http://localhost:8080/web-app-tpfinal-23544/api/oradores?id=${id_orador}`, {
+    fetch(`http://localhost:8080/web-app-23544/api/oradores?id=${id_orador}`, {
         method: "DELETE",
     })
         .then(response => response)
@@ -236,7 +236,7 @@ const actualizarOrador = () => {
         detalles_tema,
     };
 
-    fetch(`http://localhost:8080/web-app-tpfinal-23544/api/oradores?id=${oradorSeleccionado.id_orador}`, {
+    fetch(`http://localhost:8080/web-app-23544/api/oradores?id=${oradorSeleccionado.id_orador}`, {
         method: "PUT",
         body: JSON.stringify(orador),
     })
